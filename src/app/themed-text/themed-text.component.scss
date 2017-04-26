@@ -1,0 +1,7 @@
+// Only styles that don't have to be themable should go here
+
+:host {
+  font-size: 2em;
+  font-weight: 900;
+  text-transform: uppercase;
+}

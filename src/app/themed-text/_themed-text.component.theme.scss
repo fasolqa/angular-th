@@ -1,0 +1,21 @@
+// Styles that are themable should go here
+// Remember that there is no Shadow DOM support here
+// because it won't be imported directly by component.
+// Be specific with selectors because style can bleed out.
+@mixin themed-text-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+
+  app-themed-text.primary {
+    color: map-get($primary, default);
+  }
+
+  app-themed-text.accent {
+    color: map-get($accent, default);
+  }
+
+  app-themed-text.warn {
+    color: map-get($warn, default);
+  }
+}
